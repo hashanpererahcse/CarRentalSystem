@@ -5,7 +5,7 @@ It’s designed to be simple, easy to run, and demonstrate key programming conce
 
 ---
 
-## ✨ What it does
+## ✨ Project sections 
 - **User accounts** → customers can register/login, admins manage the system  
 - **Cars** → admins add, remove, or toggle availability  
 - **Bookings** → customers browse cars and create rental requests  
@@ -18,7 +18,6 @@ It’s designed to be simple, easy to run, and demonstrate key programming conce
 
 ### Requirements
 - Python **3.10+**
-- Nothing else — no external libraries needed 🎉
 
 ### Run from source
 ```bash
@@ -30,8 +29,13 @@ python -m car_rental.cli
 👉 On the first run:
 
 a local SQLite file carrental.db is created
+```bash
+login with admin user will create 3 sample cars
 
-seeded with admin/admin login + 3 sample cars
+Username : admin
+Password : admin
+
+```
 
 ### Optional: package as a single file
 
@@ -43,16 +47,19 @@ python ../build/CarRentalCLI.pyz
 ```
 
 ### 🗂️ Project layout
+
+```bash
 CarRentalCLI/
 ├── src/
 │   └── car_rental/
 │       ├── cli.py          # CLI menus + UI
 │       ├── db.py           # SQLite connection (singleton)
-│       ├── seed.py         # Seeds admin + sample cars
+│       ├── seed.py         # create admin + sample cars
 │       ├── models/         # Dataclasses (User, Car, Booking)
 │       └── services/       # Auth, Car, Booking, Notifications
 └── build/                  # optional .pyz build output
 
+```
 ### 📄 License
 
 MIT — free to use, modify, and share.
