@@ -6,8 +6,8 @@ Includes basic design patterns: **Singleton** (DB), **Factory Method** (User cre
 
 ## Quick Start
 ### Requirements
-- Python 3.10+ (recommended)
-- No external dependencies
+- Python 3.10+
+
 
 ### 1) Run
 ```bash
